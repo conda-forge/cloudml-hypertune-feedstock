@@ -35,20 +35,20 @@ Installing cloudml-hypertune
 Installing `cloudml-hypertune` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/cloudml_hypertune_dev
 conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `cloudml-hypertune` can be installed with:
 
 ```
-conda install cloudml-hypertune
+conda install -c "conda-forge/label/cloudml_hypertune_dev" cloudml-hypertune
 ```
 
 It is possible to list all of the versions of `cloudml-hypertune` available on your platform with:
 
 ```
-conda search cloudml-hypertune --channel conda-forge
+conda search cloudml-hypertune --channel conda-forge/label/cloudml_hypertune_dev
 ```
 
 
